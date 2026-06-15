@@ -1,0 +1,112 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]: "[ SKILL LIBRARY ]"
+      - heading "Skill Library" [level=1] [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Hunter
+        - generic [ref=e13]: admin
+      - button "Disconnect" [ref=e14]:
+        - img [ref=e15]
+        - generic [ref=e17]: Disconnect
+  - complementary [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - img [ref=e21]
+        - img [ref=e30]
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: The System
+        - paragraph [ref=e36]: Hunter Portal
+    - navigation [ref=e37]:
+      - link "Status" [ref=e38] [cursor=pointer]:
+        - /url: /status
+        - img [ref=e39]
+        - generic [ref=e41]: Status
+      - link "Records" [ref=e42] [cursor=pointer]:
+        - /url: /achievements
+        - img [ref=e43]
+        - generic [ref=e49]: Records
+      - link "Daily Quests" [ref=e50] [cursor=pointer]:
+        - /url: /habits
+        - img [ref=e51]
+        - generic [ref=e60]: Daily Quests
+      - link "Treasury" [ref=e61] [cursor=pointer]:
+        - /url: /finance
+        - img [ref=e62]
+        - generic [ref=e67]: Treasury
+      - link "Skill Library" [ref=e68] [cursor=pointer]:
+        - /url: /reading
+        - img [ref=e69]
+        - generic [ref=e71]: Skill Library
+      - link "Side Quests" [ref=e72] [cursor=pointer]:
+        - /url: /todos
+        - img [ref=e73]
+        - generic [ref=e77]: Side Quests
+      - link "Gate Expeditions" [ref=e78] [cursor=pointer]:
+        - /url: /trips
+        - img [ref=e79]
+        - generic [ref=e82]: Gate Expeditions
+      - link "Runes" [ref=e83] [cursor=pointer]:
+        - /url: /poetry
+        - img [ref=e84]
+        - generic [ref=e87]: Runes
+      - link "Scrolls" [ref=e88] [cursor=pointer]:
+        - /url: /notes
+        - img [ref=e89]
+        - generic [ref=e92]: Scrolls
+    - paragraph [ref=e95]: System v1.0 // Awaken
+  - button "E Level 3 25/200 EXP" [ref=e96]:
+    - generic [ref=e97]: E
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e100]: Level
+        - generic [ref=e101]: "3"
+      - generic [ref=e104]:
+        - generic [ref=e105]: 25/200
+        - generic [ref=e106]: EXP
+  - generic:
+    - generic [ref=e142]:
+      - img [ref=e144]
+      - generic [ref=e146]:
+        - paragraph [ref=e147]: +1 INT
+        - paragraph [ref=e148]: Intelligence · Tome Cataloged
+      - button "Dismiss" [ref=e149]:
+        - img [ref=e150]
+    - generic [ref=e155]:
+      - img [ref=e157]
+      - generic [ref=e163]:
+        - paragraph [ref=e164]: ACHIEVEMENT UNLOCKED
+        - paragraph [ref=e165]: Library Card
+      - button "Dismiss" [ref=e166]:
+        - img [ref=e167]
+  - main [ref=e107]:
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - text: "[ Skill Library ]"
+        - heading "Tome Archive" [level=1] [ref=e111]
+        - paragraph [ref=e112]: Knowledge sealed in tomes. Mark sigils on the essential.
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - textbox "[ Search the Library ]" [ref=e115]
+          - img [ref=e116]
+        - button "Catalog Tome" [ref=e170] [cursor=pointer]:
+          - img [ref=e171]
+          - text: Catalog Tome
+      - generic [ref=e121]:
+        - button "All" [ref=e122]
+        - button "Fiction" [ref=e172]
+      - generic [ref=e173]:
+        - generic [ref=e174]:
+          - button "Edit" [ref=e175]:
+            - img [ref=e176]
+          - button "Delete" [ref=e179]:
+            - img [ref=e180]
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - img [ref=e186]
+            - button "Star" [ref=e188]:
+              - img [ref=e189]
+          - generic [ref=e191]: Fiction
+          - heading "The Shadow Monarch Codex" [level=3] [ref=e192]
+        - generic [ref=e194]: —

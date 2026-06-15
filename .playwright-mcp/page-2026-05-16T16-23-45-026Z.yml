@@ -1,0 +1,75 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]: "[ DAILY QUESTS ]"
+      - heading "Daily Quests" [level=1] [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Hunter
+        - generic [ref=e13]: admin
+      - button "Disconnect" [ref=e14]:
+        - img [ref=e15]
+        - generic [ref=e17]: Disconnect
+  - complementary [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - img [ref=e21]
+        - img [ref=e30]
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: The System
+        - paragraph [ref=e36]: Hunter Portal
+    - navigation [ref=e37]:
+      - link "Status" [ref=e38] [cursor=pointer]:
+        - /url: /status
+        - img [ref=e39]
+        - generic [ref=e41]: Status
+      - link "Daily Quests" [ref=e42] [cursor=pointer]:
+        - /url: /habits
+        - img [ref=e43]
+        - generic [ref=e52]: Daily Quests
+      - link "Treasury" [ref=e53] [cursor=pointer]:
+        - /url: /finance
+        - img [ref=e54]
+        - generic [ref=e59]: Treasury
+      - link "Skill Library" [ref=e60] [cursor=pointer]:
+        - /url: /reading
+        - img [ref=e61]
+        - generic [ref=e63]: Skill Library
+      - link "Side Quests" [ref=e64] [cursor=pointer]:
+        - /url: /todos
+        - img [ref=e65]
+        - generic [ref=e69]: Side Quests
+      - link "Gate Expeditions" [ref=e70] [cursor=pointer]:
+        - /url: /trips
+        - img [ref=e71]
+        - generic [ref=e74]: Gate Expeditions
+      - link "Runes" [ref=e75] [cursor=pointer]:
+        - /url: /poetry
+        - img [ref=e76]
+        - generic [ref=e79]: Runes
+      - link "Scrolls" [ref=e80] [cursor=pointer]:
+        - /url: /notes
+        - img [ref=e81]
+        - generic [ref=e84]: Scrolls
+    - paragraph [ref=e87]: System v1.0 // Awaken
+  - main [ref=e88]:
+    - generic [ref=e90]:
+      - generic [ref=e93]:
+        - paragraph [ref=e94]: "[ Daily Quests ]"
+        - heading "Daily Quest Log" [level=2] [ref=e95]
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]: 0 Days
+            - text: Active Streak
+          - generic [ref=e100]:
+            - generic [ref=e101]: "0"
+            - text: Total Clears
+      - generic [ref=e103]:
+        - heading "[ Quest Registry ]" [level=3] [ref=e104]
+        - button "Inscribe Quest" [ref=e105] [cursor=pointer]:
+          - img [ref=e106]
+          - generic [ref=e107]: Inscribe Quest
+      - generic [ref=e109]:
+        - img [ref=e110]
+        - paragraph [ref=e119]: No quests inscribed
+        - paragraph [ref=e120]: Tap [ Inscribe Quest ] to register a daily directive.

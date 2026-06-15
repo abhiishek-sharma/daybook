@@ -1,0 +1,265 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]: "[ RECORDS ]"
+      - heading "Records" [level=1] [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Hunter
+        - generic [ref=e13]: admin
+      - button "Disconnect" [ref=e14]:
+        - img [ref=e15]
+        - generic [ref=e17]: Disconnect
+  - complementary [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - img [ref=e21]
+        - img [ref=e30]
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: The System
+        - paragraph [ref=e36]: Hunter Portal
+    - navigation [ref=e37]:
+      - link "Status" [ref=e38] [cursor=pointer]:
+        - /url: /status
+        - img [ref=e39]
+        - generic [ref=e41]: Status
+      - link "Records" [ref=e42] [cursor=pointer]:
+        - /url: /achievements
+        - img [ref=e43]
+        - generic [ref=e49]: Records
+      - link "Daily Quests" [ref=e50] [cursor=pointer]:
+        - /url: /habits
+        - img [ref=e51]
+        - generic [ref=e60]: Daily Quests
+      - link "Treasury" [ref=e61] [cursor=pointer]:
+        - /url: /finance
+        - img [ref=e62]
+        - generic [ref=e67]: Treasury
+      - link "Skill Library" [ref=e68] [cursor=pointer]:
+        - /url: /reading
+        - img [ref=e69]
+        - generic [ref=e71]: Skill Library
+      - link "Side Quests" [ref=e72] [cursor=pointer]:
+        - /url: /todos
+        - img [ref=e73]
+        - generic [ref=e77]: Side Quests
+      - link "Gate Expeditions" [ref=e78] [cursor=pointer]:
+        - /url: /trips
+        - img [ref=e79]
+        - generic [ref=e82]: Gate Expeditions
+      - link "Runes" [ref=e83] [cursor=pointer]:
+        - /url: /poetry
+        - img [ref=e84]
+        - generic [ref=e87]: Runes
+      - link "Scrolls" [ref=e88] [cursor=pointer]:
+        - /url: /notes
+        - img [ref=e89]
+        - generic [ref=e92]: Scrolls
+    - paragraph [ref=e95]: System v1.0 // Awaken
+  - button "E Level 3 25/200 EXP" [ref=e96]:
+    - generic [ref=e97]: E
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e100]: Level
+        - generic [ref=e101]: "3"
+      - generic [ref=e103]:
+        - generic [ref=e104]: 25/200
+        - generic [ref=e105]: EXP
+  - main [ref=e106]:
+    - generic [ref=e108]:
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - paragraph [ref=e112]: "[ Records ]"
+          - heading "Hunter Achievements" [level=1] [ref=e113]
+          - paragraph [ref=e114]: Deeds inscribed in the System. Unlock to earn titles and prestige.
+        - generic [ref=e115]:
+          - img [ref=e117]
+          - generic [ref=e123]:
+            - paragraph [ref=e124]: Unlocked
+            - paragraph [ref=e125]:
+              - text: "4"
+              - generic [ref=e126]: /26
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - heading "Bronze Tier" [level=2] [ref=e131]
+          - generic [ref=e132]: 3/8
+        - generic [ref=e134]:
+          - generic [ref=e137]:
+            - img [ref=e139]
+            - generic [ref=e142]:
+              - paragraph [ref=e144]: First Awakening
+              - paragraph [ref=e145]: The System has chosen you. The path begins.
+              - generic [ref=e146]:
+                - generic [ref=e147]: "[ Bronze ]"
+                - generic [ref=e148]: Title · Awakened
+              - paragraph [ref=e149]: Unlocked just now
+          - generic [ref=e152]:
+            - img [ref=e154]
+            - generic [ref=e163]:
+              - paragraph [ref=e165]: First Steps
+              - paragraph [ref=e166]: Clear your first Daily Quest.
+              - generic [ref=e168]: "[ Bronze ]"
+              - paragraph [ref=e169]: Unlocked just now
+          - generic [ref=e172]:
+            - img [ref=e174]
+            - generic [ref=e178]:
+              - paragraph [ref=e180]: Side Tracked
+              - paragraph [ref=e181]: Complete your first Side Quest.
+              - generic [ref=e183]: "[ Bronze ]"
+              - paragraph [ref=e184]: Unlocked just now
+          - generic [ref=e186]:
+            - img [ref=e188]
+            - generic [ref=e191]:
+              - paragraph [ref=e193]: "? ? ? ? ?"
+              - paragraph [ref=e194]: Conditions concealed.
+              - generic [ref=e196]: "[ Bronze ]"
+          - generic [ref=e198]:
+            - img [ref=e200]
+            - generic [ref=e203]:
+              - paragraph [ref=e205]: "? ? ? ? ?"
+              - paragraph [ref=e206]: Conditions concealed.
+              - generic [ref=e208]: "[ Bronze ]"
+          - generic [ref=e210]:
+            - img [ref=e212]
+            - generic [ref=e215]:
+              - paragraph [ref=e217]: "? ? ? ? ?"
+              - paragraph [ref=e218]: Conditions concealed.
+              - generic [ref=e220]: "[ Bronze ]"
+          - generic [ref=e222]:
+            - img [ref=e224]
+            - generic [ref=e227]:
+              - paragraph [ref=e229]: "? ? ? ? ?"
+              - paragraph [ref=e230]: Conditions concealed.
+              - generic [ref=e232]: "[ Bronze ]"
+          - generic [ref=e234]:
+            - img [ref=e236]
+            - generic [ref=e239]:
+              - paragraph [ref=e241]: "? ? ? ? ?"
+              - paragraph [ref=e242]: Conditions concealed.
+              - generic [ref=e244]: "[ Bronze ]"
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - heading "Silver Tier" [level=2] [ref=e249]
+          - generic [ref=e250]: 1/12
+        - generic [ref=e252]:
+          - generic [ref=e254]:
+            - img [ref=e256]
+            - generic [ref=e259]:
+              - paragraph [ref=e261]: "? ? ? ? ?"
+              - paragraph [ref=e262]: Conditions concealed.
+              - generic [ref=e264]: "[ Silver ]"
+          - generic [ref=e266]:
+            - img [ref=e268]
+            - generic [ref=e271]:
+              - paragraph [ref=e273]: "? ? ? ? ?"
+              - paragraph [ref=e274]: Conditions concealed.
+              - generic [ref=e276]: "[ Silver ]"
+          - generic [ref=e278]:
+            - img [ref=e280]
+            - generic [ref=e283]:
+              - paragraph [ref=e285]: "? ? ? ? ?"
+              - paragraph [ref=e286]: Conditions concealed.
+              - generic [ref=e288]: "[ Silver ]"
+          - generic [ref=e290]:
+            - img [ref=e292]
+            - generic [ref=e295]:
+              - paragraph [ref=e297]: "? ? ? ? ?"
+              - paragraph [ref=e298]: Conditions concealed.
+              - generic [ref=e300]: "[ Silver ]"
+          - generic [ref=e302]:
+            - img [ref=e304]
+            - generic [ref=e307]:
+              - paragraph [ref=e309]: "? ? ? ? ?"
+              - paragraph [ref=e310]: Conditions concealed.
+              - generic [ref=e312]: "[ Silver ]"
+          - generic [ref=e314]:
+            - img [ref=e316]
+            - generic [ref=e319]:
+              - paragraph [ref=e321]: "? ? ? ? ?"
+              - paragraph [ref=e322]: Conditions concealed.
+              - generic [ref=e324]: "[ Silver ]"
+          - generic [ref=e327]:
+            - img [ref=e329]
+            - generic [ref=e333]:
+              - paragraph [ref=e335]: Wind Walker
+              - paragraph [ref=e336]: Reach AGI 10.
+              - generic [ref=e337]:
+                - generic [ref=e338]: "[ Silver ]"
+                - generic [ref=e339]: Title · Wind-Walker
+              - paragraph [ref=e340]: Unlocked just now
+          - generic [ref=e342]:
+            - img [ref=e344]
+            - generic [ref=e347]:
+              - paragraph [ref=e349]: "? ? ? ? ?"
+              - paragraph [ref=e350]: Conditions concealed.
+              - generic [ref=e352]: "[ Silver ]"
+          - generic [ref=e354]:
+            - img [ref=e356]
+            - generic [ref=e359]:
+              - paragraph [ref=e361]: "? ? ? ? ?"
+              - paragraph [ref=e362]: Conditions concealed.
+              - generic [ref=e364]: "[ Silver ]"
+          - generic [ref=e366]:
+            - img [ref=e368]
+            - generic [ref=e371]:
+              - paragraph [ref=e373]: "? ? ? ? ?"
+              - paragraph [ref=e374]: Conditions concealed.
+              - generic [ref=e376]: "[ Silver ]"
+          - generic [ref=e378]:
+            - img [ref=e380]
+            - generic [ref=e383]:
+              - paragraph [ref=e385]: "? ? ? ? ?"
+              - paragraph [ref=e386]: Conditions concealed.
+              - generic [ref=e388]: "[ Silver ]"
+          - generic [ref=e390]:
+            - img [ref=e392]
+            - generic [ref=e395]:
+              - paragraph [ref=e397]: "? ? ? ? ?"
+              - paragraph [ref=e398]: Conditions concealed.
+              - generic [ref=e400]: "[ Silver ]"
+      - generic [ref=e401]:
+        - generic [ref=e402]:
+          - heading "Gold Tier" [level=2] [ref=e405]
+          - generic [ref=e406]: 0/3
+        - generic [ref=e408]:
+          - generic [ref=e410]:
+            - img [ref=e412]
+            - generic [ref=e415]:
+              - paragraph [ref=e417]: "? ? ? ? ?"
+              - paragraph [ref=e418]: Conditions concealed.
+              - generic [ref=e420]: "[ Gold ]"
+          - generic [ref=e422]:
+            - img [ref=e424]
+            - generic [ref=e427]:
+              - paragraph [ref=e429]: "? ? ? ? ?"
+              - paragraph [ref=e430]: Conditions concealed.
+              - generic [ref=e432]: "[ Gold ]"
+          - generic [ref=e434]:
+            - img [ref=e436]
+            - generic [ref=e439]:
+              - paragraph [ref=e441]: "? ? ? ? ?"
+              - paragraph [ref=e442]: Conditions concealed.
+              - generic [ref=e444]: "[ Gold ]"
+      - generic [ref=e445]:
+        - generic [ref=e446]:
+          - heading "Aura Tier" [level=2] [ref=e449]
+          - generic [ref=e450]: 0/3
+        - generic [ref=e452]:
+          - generic [ref=e454]:
+            - img [ref=e456]
+            - generic [ref=e459]:
+              - paragraph [ref=e461]: "? ? ? ? ?"
+              - paragraph [ref=e462]: Conditions concealed.
+              - generic [ref=e464]: "[ Aura ]"
+          - generic [ref=e466]:
+            - img [ref=e468]
+            - generic [ref=e471]:
+              - paragraph [ref=e473]: "? ? ? ? ?"
+              - paragraph [ref=e474]: Conditions concealed.
+              - generic [ref=e476]: "[ Aura ]"
+          - generic [ref=e478]:
+            - img [ref=e480]
+            - generic [ref=e483]:
+              - paragraph [ref=e485]: "? ? ? ? ?"
+              - paragraph [ref=e486]: Conditions concealed.
+              - generic [ref=e488]: "[ Aura ]"

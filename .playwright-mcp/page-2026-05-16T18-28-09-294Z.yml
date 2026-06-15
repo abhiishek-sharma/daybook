@@ -1,0 +1,107 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]: "[ SKILL LIBRARY ]"
+      - heading "Skill Library" [level=1] [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Hunter
+        - generic [ref=e13]: admin
+      - button "Disconnect" [ref=e14]:
+        - img [ref=e15]
+        - generic [ref=e17]: Disconnect
+  - complementary [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - img [ref=e21]
+        - img [ref=e30]
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: The System
+        - paragraph [ref=e36]: Hunter Portal
+    - navigation [ref=e37]:
+      - link "Status" [ref=e38] [cursor=pointer]:
+        - /url: /status
+        - img [ref=e39]
+        - generic [ref=e41]: Status
+      - link "Records" [ref=e42] [cursor=pointer]:
+        - /url: /achievements
+        - img [ref=e43]
+        - generic [ref=e49]: Records
+      - link "Daily Quests" [ref=e50] [cursor=pointer]:
+        - /url: /habits
+        - img [ref=e51]
+        - generic [ref=e60]: Daily Quests
+      - link "Treasury" [ref=e61] [cursor=pointer]:
+        - /url: /finance
+        - img [ref=e62]
+        - generic [ref=e67]: Treasury
+      - link "Skill Library" [ref=e68] [cursor=pointer]:
+        - /url: /reading
+        - img [ref=e69]
+        - generic [ref=e71]: Skill Library
+      - link "Side Quests" [ref=e72] [cursor=pointer]:
+        - /url: /todos
+        - img [ref=e73]
+        - generic [ref=e77]: Side Quests
+      - link "Gate Expeditions" [ref=e78] [cursor=pointer]:
+        - /url: /trips
+        - img [ref=e79]
+        - generic [ref=e82]: Gate Expeditions
+      - link "Runes" [ref=e83] [cursor=pointer]:
+        - /url: /poetry
+        - img [ref=e84]
+        - generic [ref=e87]: Runes
+      - link "Scrolls" [ref=e88] [cursor=pointer]:
+        - /url: /notes
+        - img [ref=e89]
+        - generic [ref=e92]: Scrolls
+    - paragraph [ref=e95]: System v1.0 // Awaken
+  - button "E Level 3 25/200 EXP" [ref=e96]:
+    - generic [ref=e97]: E
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e100]: Level
+        - generic [ref=e101]: "3"
+      - generic [ref=e104]:
+        - generic [ref=e105]: 25/200
+        - generic [ref=e106]: EXP
+  - main [ref=e107]:
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - text: "[ Skill Library ]"
+        - heading "Tome Archive" [level=1] [ref=e111]
+        - paragraph [ref=e112]: Knowledge sealed in tomes. Mark sigils on the essential.
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - textbox "[ Search the Library ]" [ref=e115]
+          - img [ref=e116]
+        - button "Cancel" [ref=e125] [cursor=pointer]:
+          - img [ref=e126]
+          - text: Cancel
+      - generic [ref=e129]:
+        - textbox "Tome title" [active] [ref=e130]
+        - textbox "Scribe / Source" [ref=e131]
+        - textbox "Reading rite (e.g. \"12 min\")" [ref=e132]
+        - generic [ref=e134]:
+          - generic [ref=e135]: Discipline
+          - combobox [ref=e136]:
+            - option "Fiction" [selected]
+            - option "Non-fiction"
+            - option "Sci-Fi"
+            - option "Fantasy"
+            - option "Mystery"
+            - option "Biography"
+            - option "History"
+            - option "Philosophy"
+            - option "Science"
+            - option "Cosmology"
+            - option "Productivity"
+            - option "Self-help"
+            - option "Poetry"
+            - option "Essay"
+            - option "Design"
+            - option "Custom..."
+        - textbox "Inscription or summary..." [ref=e137]
+        - button "Catalog" [disabled] [ref=e139]
+      - button "All" [ref=e122]
+      - paragraph [ref=e124]: The library stands empty.

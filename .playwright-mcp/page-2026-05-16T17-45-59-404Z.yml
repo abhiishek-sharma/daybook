@@ -1,0 +1,211 @@
+- generic [ref=e22]:
+  - banner [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e27]: "[ STATUS ]"
+      - heading "Status" [level=1] [ref=e28]
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Hunter
+        - generic [ref=e32]: admin
+      - button "Disconnect" [ref=e33]:
+        - img [ref=e34]
+        - generic [ref=e36]: Disconnect
+  - complementary [ref=e37]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - img [ref=e40]
+        - img [ref=e49]
+      - generic [ref=e53]:
+        - paragraph [ref=e54]: The System
+        - paragraph [ref=e55]: Hunter Portal
+    - navigation [ref=e56]:
+      - link "Status" [ref=e57] [cursor=pointer]:
+        - /url: /status
+        - img [ref=e58]
+        - generic [ref=e60]: Status
+      - link "Daily Quests" [ref=e61] [cursor=pointer]:
+        - /url: /habits
+        - img [ref=e62]
+        - generic [ref=e71]: Daily Quests
+      - link "Treasury" [ref=e72] [cursor=pointer]:
+        - /url: /finance
+        - img [ref=e73]
+        - generic [ref=e78]: Treasury
+      - link "Skill Library" [ref=e79] [cursor=pointer]:
+        - /url: /reading
+        - img [ref=e80]
+        - generic [ref=e82]: Skill Library
+      - link "Side Quests" [ref=e83] [cursor=pointer]:
+        - /url: /todos
+        - img [ref=e84]
+        - generic [ref=e88]: Side Quests
+      - link "Gate Expeditions" [ref=e89] [cursor=pointer]:
+        - /url: /trips
+        - img [ref=e90]
+        - generic [ref=e93]: Gate Expeditions
+      - link "Runes" [ref=e94] [cursor=pointer]:
+        - /url: /poetry
+        - img [ref=e95]
+        - generic [ref=e98]: Runes
+      - link "Scrolls" [ref=e99] [cursor=pointer]:
+        - /url: /notes
+        - img [ref=e100]
+        - generic [ref=e103]: Scrolls
+    - paragraph [ref=e106]: System v1.0 // Awaken
+  - button "E Level 2 0/150 EXP" [ref=e107]:
+    - generic [ref=e108]: E
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]: Level
+        - generic [ref=e112]: "2"
+      - generic [ref=e114]:
+        - generic [ref=e115]: 0/150
+        - generic [ref=e116]: EXP
+  - main [ref=e117]:
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - generic:
+          - img
+        - generic [ref=e121]:
+          - img [ref=e122]
+          - generic [ref=e124]: Status Window
+        - heading "Hunter Profile" [level=2] [ref=e125]
+        - generic [ref=e126]:
+          - generic [ref=e128]:
+            - text: E
+            - generic [ref=e129]: E-Rank
+          - generic [ref=e130]:
+            - generic [ref=e131]:
+              - generic [ref=e132]: Level
+              - generic [ref=e133]: "2"
+            - generic [ref=e134]:
+              - generic [ref=e135]: Title
+              - button "Awakened" [ref=e136]:
+                - generic [ref=e137]: Awakened
+                - img [ref=e138]
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - generic [ref=e142]: Experience
+                - generic [ref=e143]: 0 / 150 EXP
+              - paragraph [ref=e145]: 150 EXP to next level
+      - generic [ref=e146]:
+        - generic [ref=e147]:
+          - img [ref=e148]
+          - generic [ref=e150]: Attribute Window
+        - heading "Combat Aptitudes" [level=3] [ref=e151]
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e154]:
+              - generic [ref=e155]:
+                - img [ref=e157]
+                - generic [ref=e159]: STR
+              - generic [ref=e160]: "0"
+            - generic [ref=e162]:
+              - generic [ref=e163]: Strength
+              - generic [ref=e164]: Daily Quest clears
+          - generic [ref=e165]:
+            - generic [ref=e166]:
+              - generic [ref=e167]:
+                - img [ref=e169]
+                - generic [ref=e173]: AGI
+              - generic [ref=e174]: "0"
+            - generic [ref=e176]:
+              - generic [ref=e177]: Agility
+              - generic [ref=e178]: Side Quest clears
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - generic [ref=e181]:
+                - img [ref=e183]
+                - generic [ref=e191]: INT
+              - generic [ref=e192]: "0"
+            - generic [ref=e194]:
+              - generic [ref=e195]: Intelligence
+              - generic [ref=e196]: Tomes cataloged
+          - generic [ref=e197]:
+            - generic [ref=e198]:
+              - generic [ref=e199]:
+                - img [ref=e201]
+                - generic [ref=e204]: SEN
+              - generic [ref=e205]: "0"
+            - generic [ref=e207]:
+              - generic [ref=e208]: Sense
+              - generic [ref=e209]: Treasury entries
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - generic [ref=e212]:
+                - img [ref=e214]
+                - generic [ref=e216]: MAG
+              - generic [ref=e217]: "0"
+            - generic [ref=e219]:
+              - generic [ref=e220]: Mana
+              - generic [ref=e221]: Runes carved
+      - generic [ref=e222]:
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - img [ref=e225]
+            - generic [ref=e228]: Total EXP
+          - paragraph [ref=e229]: "100"
+        - generic [ref=e230]:
+          - generic [ref=e231]:
+            - img [ref=e232]
+            - generic [ref=e235]: Current Rank
+          - paragraph [ref=e236]: E
+        - generic [ref=e237]:
+          - generic [ref=e238]:
+            - img [ref=e239]
+            - generic [ref=e242]: Next Rank At
+          - paragraph [ref=e243]: Level 5 (D)
+        - generic [ref=e244]:
+          - generic [ref=e245]:
+            - img [ref=e246]
+            - generic [ref=e248]: Status
+          - paragraph [ref=e249]: Awakened
+      - generic [ref=e250]:
+        - generic [ref=e251]:
+          - generic [ref=e252]:
+            - paragraph [ref=e253]: Recent Quests
+            - heading "Activity Log" [level=3] [ref=e254]
+          - button "Refresh" [ref=e255]
+        - list [ref=e256]:
+          - listitem [ref=e257]:
+            - generic [ref=e258]:
+              - img [ref=e260]
+              - generic [ref=e263]:
+                - paragraph [ref=e264]: Side Quest
+                - paragraph [ref=e265]: 17m ago
+            - generic [ref=e266]: +15 EXP
+          - listitem [ref=e267]:
+            - generic [ref=e268]:
+              - img [ref=e270]
+              - generic [ref=e273]:
+                - paragraph [ref=e274]: Side Quest
+                - paragraph [ref=e275]: 17m ago
+            - generic [ref=e276]: +15 EXP
+          - listitem [ref=e277]:
+            - generic [ref=e278]:
+              - img [ref=e280]
+              - generic [ref=e283]:
+                - paragraph [ref=e284]: Side Quest
+                - paragraph [ref=e285]: 17m ago
+            - generic [ref=e286]: +15 EXP
+          - listitem [ref=e287]:
+            - generic [ref=e288]:
+              - img [ref=e290]
+              - generic [ref=e293]:
+                - paragraph [ref=e294]: Side Quest
+                - paragraph [ref=e295]: 17m ago
+            - generic [ref=e296]: +15 EXP
+          - listitem [ref=e297]:
+            - generic [ref=e298]:
+              - img [ref=e300]
+              - generic [ref=e303]:
+                - paragraph [ref=e304]: Side Quest
+                - paragraph [ref=e305]: 1h ago
+            - generic [ref=e306]: +15 EXP
+          - listitem [ref=e307]:
+            - generic [ref=e308]:
+              - img [ref=e310]
+              - generic [ref=e313]:
+                - paragraph [ref=e314]: Daily Quest
+                - paragraph [ref=e315]: 1h ago
+            - generic [ref=e316]: +25 EXP
