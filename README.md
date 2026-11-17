@@ -6,6 +6,14 @@ Built with React + TypeScript on the frontend, Express + SQLite on the backend. 
 
 ---
 
+## Screenshots
+
+| Auth | Habits | Finance | Stats |
+|---|---|---|---|
+| ![Login](docs/screen-auth.png) | ![Habits](docs/screen-habits.png) | ![Finance](docs/screen-finance.png) | ![Stats](docs/screen-stats.png) |
+
+---
+
 ## Features
 
 **Habits** — daily check-in tracker with streak counter and contribution heatmap
