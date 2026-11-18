@@ -30,7 +30,7 @@ Built with React + TypeScript on the frontend, Express + SQLite on the backend. 
 
 **Trips** — travel log with an "active trip" pin
 
-**Auth** — session-based login with bcrypt, runs locally, no external auth provider
+**Auth** — optional session-based login with bcrypt (off by default for demos; `REQUIRE_LOGIN=true` turns it on), no external auth provider
 
 ---
 
@@ -64,10 +64,11 @@ The SQLite database (`data/observatory.db`) is created automatically on first ru
 
 ### Configuration
 
-It runs with no configuration, using a default login of `admin` / `changeme` (the server prints a warning while defaults are in use). To set your own, copy `.env.example` to `.env.local`:
+It runs with no configuration in **demo mode**: there is no login and the app opens straight to the dashboard. To require signing in, copy `.env.example` to `.env.local` and set `REQUIRE_LOGIN=true` (the default login is `admin` / `changeme`, and the server warns while defaults are in use):
 
 | Variable | Purpose | Default |
 |---|---|---|
+| `REQUIRE_LOGIN` | Require signing in | `false` (demo mode) |
 | `OBSERVATORY_USER` | Login username | `admin` |
 | `OBSERVATORY_PASSWORD` | Login password | `changeme` |
 | `SESSION_SECRET` | Signs the session cookie; use a long random string | dev-only value |

@@ -5,6 +5,7 @@ interface AuthState {
   ready: boolean;
   authed: boolean;
   username: string | null;
+  loginRequired: boolean;
   login: (username: string, password: string) => Promise<void>;
   logout: () => Promise<void>;
 }
@@ -15,14 +16,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
   const [authed, setAuthed] = useState(false);
   const [username, setUsername] = useState<string | null>(null);
+  const [loginRequired, setLoginRequired] = useState(true);
 
   useEffect(() => {
     let mounted = true;
-    api.get<{ authed: boolean; username?: string }>('/api/auth/me')
+    api.get<{ authed: boolean; username?: string; loginRequired?: boolean }>('/api/auth/me')
       .then(r => {
         if (!mounted) return;
         setAuthed(r.authed);
         setUsername(r.username ?? null);
+        setLoginRequired(r.loginRequired !== false);
       })
       .catch(() => {})
       .finally(() => mounted && setReady(true));
@@ -42,7 +45,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <AuthCtx.Provider value={{ ready, authed, username, login, logout }}>
+    <AuthCtx.Provider value={{ ready, authed, username, loginRequired, login, logout }}>
       {children}
     </AuthCtx.Provider>
   );

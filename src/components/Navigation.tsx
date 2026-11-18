@@ -85,7 +85,7 @@ export function Sidebar() {
 
 export function TopBar() {
   const location = useLocation();
-  const { username, logout } = useAuth();
+  const { username, logout, loginRequired } = useAuth();
   const pageTitle = navItems.find(item => item.path === location.pathname)?.label || 'Dashboard';
 
   return (
@@ -94,10 +94,16 @@ export function TopBar() {
         <h1 className="font-display text-2xl md:text-3xl text-primary tracking-tight">{pageTitle}</h1>
       </div>
       <div className="flex items-center gap-4">
-        {username && <span className="hidden md:inline text-[10px] uppercase tracking-widest text-on-surface-variant opacity-60">@{username}</span>}
-        <button onClick={logout} title="Sign out" className="text-on-surface-variant hover:text-error transition-colors">
-          <LogOut size={18} />
-        </button>
+        {loginRequired ? (
+          <>
+            {username && <span className="hidden md:inline text-[10px] uppercase tracking-widest text-on-surface-variant opacity-60">@{username}</span>}
+            <button onClick={logout} title="Sign out" className="text-on-surface-variant hover:text-error transition-colors">
+              <LogOut size={18} />
+            </button>
+          </>
+        ) : (
+          <span className="px-3 py-1 rounded-full border border-tertiary/30 text-tertiary text-[10px] uppercase tracking-widest">Demo</span>
+        )}
       </div>
     </header>
   );

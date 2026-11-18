@@ -4,6 +4,9 @@ import bcrypt from 'bcryptjs';
 const AUTH_USER = process.env.OBSERVATORY_USER || process.env.APP_USER || 'admin';
 const AUTH_PASSWORD = process.env.OBSERVATORY_PASSWORD || process.env.APP_PASSWORD || 'changeme';
 
+// Login is off by default (demo mode). Set REQUIRE_LOGIN=true to require it.
+export const loginRequired = process.env.REQUIRE_LOGIN === 'true';
+
 // True when no password was configured and the built-in default is in use
 export const usingDefaultPassword = !(process.env.OBSERVATORY_PASSWORD || process.env.APP_PASSWORD);
 
@@ -15,17 +18,19 @@ declare module 'express-session' {
 }
 
 export function requireAuth(req: Request, res: Response, next: NextFunction) {
-  if (req.session?.authed) return next();
+  if (!loginRequired || req.session?.authed) return next();
   res.status(401).json({ error: 'unauthorized' });
 }
 
 export const authRouter = Router();
 
 authRouter.get('/me', (req, res) => {
-  if (req.session?.authed) {
-    res.json({ authed: true, username: req.session.username });
+  if (!loginRequired) {
+    res.json({ authed: true, username: 'demo', loginRequired: false });
+  } else if (req.session?.authed) {
+    res.json({ authed: true, username: req.session.username, loginRequired: true });
   } else {
-    res.json({ authed: false });
+    res.json({ authed: false, loginRequired: true });
   }
 });
 

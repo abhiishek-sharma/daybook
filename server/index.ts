@@ -4,7 +4,7 @@ import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import path from 'path';
 import fs from 'fs';
-import { authRouter, usingDefaultPassword } from './auth.js';
+import { authRouter, usingDefaultPassword, loginRequired } from './auth.js';
 import { habitsRouter } from './routes/habits.js';
 import { todosRouter } from './routes/todos.js';
 import { notesRouter } from './routes/notes.js';
@@ -55,10 +55,12 @@ app.use((err: Error, _req: express.Request, res: express.Response, _next: expres
 
 app.listen(PORT, () => {
   console.log(`[observatory api] listening on http://localhost:${PORT}`);
-  if (usingDefaultPassword) {
+  if (!loginRequired) {
+    console.log('[observatory api] demo mode: login is disabled (set REQUIRE_LOGIN=true to enable it)');
+  } else if (usingDefaultPassword) {
     console.warn('[observatory api] WARNING: using the default login (admin / changeme). Set OBSERVATORY_PASSWORD in .env.local.');
   }
-  if (!process.env.SESSION_SECRET) {
+  if (loginRequired && !process.env.SESSION_SECRET) {
     console.warn('[observatory api] WARNING: using the default SESSION_SECRET. Set a long random SESSION_SECRET in .env.local.');
   }
 });
