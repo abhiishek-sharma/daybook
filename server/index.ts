@@ -1,10 +1,10 @@
+import './env.js';
 import express from 'express';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
-import dotenv from 'dotenv';
 import path from 'path';
 import fs from 'fs';
-import { authRouter } from './auth.js';
+import { authRouter, usingDefaultPassword } from './auth.js';
 import { habitsRouter } from './routes/habits.js';
 import { todosRouter } from './routes/todos.js';
 import { notesRouter } from './routes/notes.js';
@@ -13,8 +13,6 @@ import { readingRouter } from './routes/reading.js';
 import { tripsRouter } from './routes/trips.js';
 import { poetryRouter } from './routes/poetry.js';
 
-dotenv.config({ path: path.join(process.cwd(), '.env.local') });
-dotenv.config();
 
 const app = express();
 const PORT = Number(process.env.PORT || 3001);
@@ -57,4 +55,10 @@ app.use((err: Error, _req: express.Request, res: express.Response, _next: expres
 
 app.listen(PORT, () => {
   console.log(`[observatory api] listening on http://localhost:${PORT}`);
+  if (usingDefaultPassword) {
+    console.warn('[observatory api] WARNING: using the default login (admin / changeme). Set OBSERVATORY_PASSWORD in .env.local.');
+  }
+  if (!process.env.SESSION_SECRET) {
+    console.warn('[observatory api] WARNING: using the default SESSION_SECRET. Set a long random SESSION_SECRET in .env.local.');
+  }
 });

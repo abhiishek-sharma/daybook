@@ -82,9 +82,12 @@ export function Auth() {
           {submitting ? 'Signing in…' : 'Sign in'}
         </button>
 
-        <p className="mt-8 pt-8 border-t border-white/5 text-[10px] text-on-surface-variant opacity-40 leading-relaxed">
-          Defaults: <span className="text-tertiary font-mono">admin / changeme</span>.<br />Override in <span className="font-mono">.env.local</span>.
-        </p>
+        {/* Only shown in local development; never advertise default credentials in a build */}
+        {import.meta.env.DEV && (
+          <p className="mt-8 pt-8 border-t border-white/5 text-[10px] text-on-surface-variant opacity-40 leading-relaxed">
+            Defaults: <span className="text-tertiary font-mono">admin / changeme</span>.<br />Override in <span className="font-mono">.env.local</span>.
+          </p>
+        )}
       </motion.form>
     </div>
   );

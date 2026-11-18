@@ -4,6 +4,9 @@ import bcrypt from 'bcryptjs';
 const AUTH_USER = process.env.OBSERVATORY_USER || process.env.APP_USER || 'admin';
 const AUTH_PASSWORD = process.env.OBSERVATORY_PASSWORD || process.env.APP_PASSWORD || 'changeme';
 
+// True when no password was configured and the built-in default is in use
+export const usingDefaultPassword = !(process.env.OBSERVATORY_PASSWORD || process.env.APP_PASSWORD);
+
 declare module 'express-session' {
   interface SessionData {
     authed?: boolean;

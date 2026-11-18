@@ -57,10 +57,21 @@ npm install
 npm run dev
 ```
 
-Frontend: `http://localhost:3000`  
-API: same port (proxied by Vite)
+Frontend: `http://localhost:3000` (the Vite dev server proxies `/api` to the API on port 3001).
+If port 3000 is already in use, the frontend stops with an error instead of switching ports; free the port or run `npx vite --port=3005 --strictPort` alongside `npm run dev:server`.
 
-No environment variables required. The SQLite database is created automatically on first run.
+The SQLite database (`data/observatory.db`) is created automatically on first run and is git-ignored.
+
+### Configuration
+
+It runs with no configuration, using a default login of `admin` / `changeme` (the server prints a warning while defaults are in use). To set your own, copy `.env.example` to `.env.local`:
+
+| Variable | Purpose | Default |
+|---|---|---|
+| `OBSERVATORY_USER` | Login username | `admin` |
+| `OBSERVATORY_PASSWORD` | Login password | `changeme` |
+| `SESSION_SECRET` | Signs the session cookie; use a long random string | dev-only value |
+| `PORT` | API port | `3001` |
 
 ---
 
