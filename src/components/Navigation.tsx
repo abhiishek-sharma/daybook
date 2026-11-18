@@ -50,7 +50,7 @@ export function Sidebar() {
           </motion.div>
         </div>
         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-          <p className="font-display text-tertiary text-lg font-bold">Dashboard</p>
+          <p className="font-display text-tertiary text-lg font-bold">Daybook</p>
         </div>
       </div>
       
@@ -86,7 +86,7 @@ export function Sidebar() {
 export function TopBar() {
   const location = useLocation();
   const { username, logout, loginRequired } = useAuth();
-  const pageTitle = navItems.find(item => item.path === location.pathname)?.label || 'Dashboard';
+  const pageTitle = navItems.find(item => item.path === location.pathname)?.label || 'Daybook';
 
   return (
     <header className="fixed top-0 w-full bg-surface/10 backdrop-blur-xl border-b border-white/10 shadow-[0_0_20px_rgba(233,195,73,0.05)] flex justify-between items-center px-6 md:px-12 lg:pl-28 h-16 z-50">

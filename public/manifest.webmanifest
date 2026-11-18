@@ -1,6 +1,6 @@
 {
-  "name": "Personal Dashboard",
-  "short_name": "Dashboard",
+  "name": "Daybook",
+  "short_name": "Daybook",
   "description": "Habits, todos, notes, finance, reading, trips, poetry — all in one.",
   "start_url": "/",
   "scope": "/",

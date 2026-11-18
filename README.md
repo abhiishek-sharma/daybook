@@ -1,6 +1,6 @@
-# Personal Dashboard
+# Daybook
 
-A self-hosted personal productivity dashboard — dark glass aesthetic, gold accents, runs entirely on your machine. No cloud, no subscriptions.
+A self-hosted daily dashboard for habits, money, reading, tasks, notes, poems and trips: dark glass aesthetic, gold accents, runs entirely on your machine. No cloud, no subscriptions.
 
 Built with React + TypeScript on the frontend, Express + SQLite on the backend. Everything persists to a local SQLite file you own.
 
@@ -8,9 +8,15 @@ Built with React + TypeScript on the frontend, Express + SQLite on the backend. 
 
 ## Screenshots
 
-| Auth | Habits | Finance | Stats |
-|---|---|---|---|
-| ![Login](docs/screen-auth.png) | ![Habits](docs/screen-habits.png) | ![Finance](docs/screen-finance.png) | ![Stats](docs/screen-stats.png) |
+| Habits | Finance |
+|---|---|
+| ![Habits: streaks and a contribution heatmap](docs/screen-habits.png) | ![Finance: balance, monthly budget and spending chart](docs/screen-finance.png) |
+
+| Reading | Trips |
+|---|---|
+| ![Reading: library with genre filters](docs/screen-reading.png) | ![Trips: active trip with route and packing list](docs/screen-trips.png) |
+
+Screenshots use fictional sample data.
 
 ---
 
