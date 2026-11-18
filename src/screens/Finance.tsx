@@ -30,8 +30,8 @@ export function Finance() {
           <div className="absolute -top-24 -right-24 w-64 h-64 bg-tertiary/5 rounded-full blur-[80px]"></div>
           <span className="text-xs text-on-surface-variant uppercase tracking-widest font-semibold mb-2">Total Balance</span>
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-display text-tertiary">$</span>
-            <span className={`text-5xl font-display ${s.totalWealth < 0 ? 'text-error' : 'text-on-surface'}`}>{s.totalWealth.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+            <span className="text-3xl font-display text-tertiary">₹</span>
+            <span className={`text-5xl font-display ${s.totalWealth < 0 ? 'text-error' : 'text-on-surface'}`}>{s.totalWealth.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
           </div>
           {s.priorMonthDelta !== null && (
             <div className={`mt-6 flex items-center gap-2 text-sm ${s.priorMonthDelta < 0 ? 'text-primary' : 'text-error'}`}>
@@ -45,8 +45,8 @@ export function Finance() {
             <div>
               <span className="text-xs text-on-surface-variant uppercase tracking-widest font-semibold mb-2 block">This Month</span>
               <div className="flex items-baseline gap-2">
-                <span className="text-2xl font-display text-primary">$</span>
-                <span className="text-3xl font-display text-on-surface">{s.monthSpend.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                <span className="text-2xl font-display text-primary">₹</span>
+                <span className="text-3xl font-display text-on-surface">{s.monthSpend.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
               </div>
             </div>
             <button onClick={() => setEditingBudget(b => !b)} className="text-[10px] text-tertiary opacity-60 hover:opacity-100 uppercase tracking-widest">Edit</button>
@@ -56,7 +56,7 @@ export function Finance() {
           ) : (
             <div className="mt-8">
               <div className="flex justify-between text-xs text-on-surface-variant uppercase mb-2">
-                <span>Budget ${s.monthlyCeiling.toLocaleString()}</span>
+                <span>Budget ₹{s.monthlyCeiling.toLocaleString('en-IN')}</span>
                 <span className="text-tertiary">{s.utilizedPct}% used</span>
               </div>
               <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
@@ -82,7 +82,7 @@ export function Finance() {
                   cursor={{ fill: 'rgba(233,195,73,0.05)' }}
                   contentStyle={{ background: '#1c1b1c', border: '1px solid rgba(233,195,73,0.2)', borderRadius: 12, fontSize: 12 }}
                   labelStyle={{ color: '#e9c349' }}
-                  formatter={(value: number) => [`$${value.toFixed(2)}`, 'Spent']}
+                  formatter={(value: number) => [`₹${value.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`, 'Spent']}
                 />
                 <Bar dataKey="total" radius={[4, 4, 0, 0]}>
                   {s.chart.map((entry, i) => (
@@ -130,7 +130,7 @@ function BudgetEditor({ current, onSave, onCancel }: { current: number; onSave: 
   }
   return (
     <div className="mt-8 space-y-3">
-      <label className="text-[10px] uppercase tracking-widest text-on-surface-variant">Monthly Budget ($)</label>
+      <label className="text-[10px] uppercase tracking-widest text-on-surface-variant">Monthly Budget (₹)</label>
       <div className="flex gap-2">
         <input
           type="number"
@@ -231,7 +231,7 @@ function TransactionItem({ tx, onDelete, onEdit }: { tx: Transaction; onDelete: 
       <div className="flex items-center gap-4">
         <div className="text-right">
           <p className={`font-display text-lg ${positive ? 'text-tertiary' : 'text-on-surface'}`}>
-            {positive ? '+' : ''}{tx.amount.toFixed(2)}
+            {positive ? '+' : '−'}₹{Math.abs(tx.amount).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
           </p>
         </div>
         <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">

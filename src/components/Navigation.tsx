@@ -89,7 +89,7 @@ export function TopBar() {
   const pageTitle = navItems.find(item => item.path === location.pathname)?.label || 'Dashboard';
 
   return (
-    <header className="fixed top-0 w-full bg-surface/10 backdrop-blur-xl border-b border-white/10 shadow-[0_0_20px_rgba(233,195,73,0.05)] flex justify-between items-center px-6 md:px-12 h-16 z-50">
+    <header className="fixed top-0 w-full bg-surface/10 backdrop-blur-xl border-b border-white/10 shadow-[0_0_20px_rgba(233,195,73,0.05)] flex justify-between items-center px-6 md:px-12 lg:pl-28 h-16 z-50">
       <div className="flex items-center gap-4">
         <h1 className="font-display text-2xl md:text-3xl text-primary tracking-tight">{pageTitle}</h1>
       </div>

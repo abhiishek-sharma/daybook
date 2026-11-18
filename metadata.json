@@ -1,6 +1,0 @@
-{
-  "name": "Observatory",
-  "description": "A personal sanctuary for quiet reflection, habit tracking, and cosmic observation.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
