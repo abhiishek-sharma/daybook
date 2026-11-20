@@ -22,6 +22,7 @@ SQLite file that you own: no account, no subscription, no cloud database.
 ![Express](https://img.shields.io/badge/Express-4-000?logo=express&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-better--sqlite3-003b57?logo=sqlite&logoColor=white)
 ![Self-hosted](https://img.shields.io/badge/data-one%20local%20SQLite%20file-e9c349)
+[![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 
 </div>
 
@@ -197,4 +198,4 @@ public/        icons and the web app manifest
 
 ## License
 
-No license file has been added yet, so default copyright applies.
+MIT. See [LICENSE](LICENSE).
